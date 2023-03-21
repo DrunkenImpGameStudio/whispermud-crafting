@@ -1,7 +1,7 @@
 'use strict';
 
 const sprintf = require('sprintf-js').sprintf;
-const { Broadcast: B, CommandManager, ItemType } = require('ranvier');
+const { Broadcast: B, CommandManager, ItemType } = require('whispermud-core');
 const Crafting = require('../lib/Crafting');
 const say = B.sayAt;
 const ItemUtil = require('../../bundle-example-lib/lib/ItemUtil');

@@ -1,8 +1,7 @@
 {
-  "private": true,
-  "name": "simple-crafting",
+  "name": "whispermud-crafting",
   "version": "1.0.0",
-  "description": "Ranvier bundle for a simple crafting system",
+  "description": "Simple crafting system",
   "dependencies": {
     "rando-js": "^0.2.0"
   }

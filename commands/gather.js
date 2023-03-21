@@ -1,7 +1,7 @@
 'use strict';
 
 const { Random } = require('rando-js');
-const { Broadcast: B } = require('ranvier');
+const { Broadcast: B } = require('whispermud-core');
 const ArgParser = require('../../bundle-example-lib/lib/ArgParser');
 const ItemUtil = require('../../bundle-example-lib/lib/ItemUtil');
 const Crafting = require('../lib/Crafting');

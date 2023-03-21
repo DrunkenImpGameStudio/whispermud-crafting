@@ -1,6 +1,6 @@
 'use strict';
 
-const { Broadcast: B } = require('ranvier');
+const { Broadcast: B } = require('whispermud-core');
 const Crafting = require('../lib/Crafting');
 const ItemUtil = require('../../bundle-example-lib/lib/ItemUtil');
 
