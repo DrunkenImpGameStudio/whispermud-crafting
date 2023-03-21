@@ -2,7 +2,7 @@
 
 const { Broadcast: B } = require('whispermud-core');
 const Crafting = require('../lib/Crafting');
-const ItemUtil = require('../../bundle-example-lib/lib/ItemUtil');
+const ItemUtil = require('../../whispermud-lib/lib/ItemUtil');
 
 module.exports = {
   aliases: [ "materials" ],
