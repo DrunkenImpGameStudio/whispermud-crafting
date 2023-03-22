@@ -5,8 +5,8 @@ const {
   Broadcast: B,
 } = require('whispermud-core');
 
-const ItemUtil = require('bundles/whispermud-lib/lib/ItemUtil');
-const ArgParser = require('bundles/whispermud-lib/lib/ArgParser');
+const ItemUtil = require('../../whispermud-lib/lib/ItemUtil');
+const ArgParser = require('../../whispermud-lib/lib/ArgParser');
 
 module.exports = {
   usage: 'gather <resource>',
