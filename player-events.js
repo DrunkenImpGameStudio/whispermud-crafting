@@ -1,6 +1,6 @@
 'use strict';
 const Crafting = require('./lib/Crafting');
-const ItemUtil = require('../myelin-lib/lib/ItemUtil');
+const ItemUtil = require('../whispermud-lib/lib/ItemUtil');
 
 module.exports = srcPath => {
   const B = require(srcPath + 'Broadcast');

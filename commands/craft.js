@@ -8,8 +8,8 @@ module.exports = (srcPath, bundlePath) => {
 
   const say = B.sayAt;
   const CommandManager = require(srcPath + 'CommandManager');
-  const Crafting = require(bundlePath + 'complex-crafting/lib/Crafting');
-  const ItemUtil = require(bundlePath + 'myelin-lib/lib/ItemUtil');
+  const Crafting = require(bundlePath + 'whispermud-crafting/lib/Crafting');
+  const ItemUtil = require(bundlePath + 'whispermud-lib/lib/ItemUtil');
 
   const subcommands = new CommandManager();
 

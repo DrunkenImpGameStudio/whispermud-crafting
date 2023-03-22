@@ -4,7 +4,7 @@ const {
   Broadcast: B,
 } = require('whispermud-core');
 const Crafting = require('../lib/Crafting');
-const ItemUtil = require('bundles/myelin-lib/lib/ItemUtil');
+const ItemUtil = require('bundles/whispermud-lib/lib/ItemUtil');
 module.exports = {
   aliases: [ "materials" ],
   command: state => (args, player) => {
