@@ -1,5 +1,5 @@
 ---
-- item: "limbo:7" # target item to create
+- item: "white:7" # target item to create
   recipe:
     plant_material: 3 # resource key: amount
     rose_petal: 1
