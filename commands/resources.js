@@ -1,12 +1,14 @@
 'use strict';
 
-const { Broadcast: B } = require('whispermud-core');
+const {
+  Broadcast: B,
+} = require('whispermud-core');
 const Crafting = require('../lib/Crafting');
-const ItemUtil = require('../../whispermud-lib/lib/ItemUtil');
-
+const ItemUtil = require('bundles/myelin-lib/lib/ItemUtil');
 module.exports = {
   aliases: [ "materials" ],
   command: state => (args, player) => {
+    //TODO: Deprecate...
     const playerResources = player.getMeta('resources');
 
     if (!playerResources) {
@@ -17,7 +19,7 @@ module.exports = {
     B.sayAt(player, B.line(40));
     let totalAmount = 0;
     for (const resourceKey in playerResources) {
-      const amount = playerResources[resourceKey];
+      const amount = playerResources[resourceKey] || 0;
       totalAmount += amount;
 
       const resItem = Crafting.getResourceItem(resourceKey);
@@ -29,3 +31,4 @@ module.exports = {
     }
   }
 };
+

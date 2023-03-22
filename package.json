@@ -1,7 +1,7 @@
 {
   "name": "whispermud-crafting",
   "version": "1.0.0",
-  "description": "Simple crafting system",
+  "description": "Crafting system",
   "dependencies": {
     "rando-js": "^0.2.0"
   }

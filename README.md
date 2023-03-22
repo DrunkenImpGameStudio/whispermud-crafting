@@ -1,56 +1,25 @@
-Demonstrative bundle showing how one might implement a crafting system.
+# complex-crafting
 
-## Usage
+A more complex crafting bundle for RanvierMUD.
 
-Recipes are defined in 'data/recipes.json' like so:
+## Current features
 
-```js
-[
-  {
-    // the item this recipe will generate
-    "item": "limbo:potionhealth1",
-    // recipe defines the resources needed and their amounts
-    "recipe": {
-      "plant_material": 3,
-      "rose_petal": 1
-    }
-  }
-]
+- Resource-based crafting (similar to simple-crafting)
+- Item-based crafting (consumes existing inventory items to create a new one)
+- Tools (items that you need for a recipe but are not consumed)
+- Enhanced crafting commands such as craft search
+- Initial support for concepts such as 'blueprints' or learning recipes.
+
+## Crafting
+
+Recipes are defined in 'data/recipes.md' like so:
+
+```
+- item: "limbo:7" # target item to create
+  recipe:
+    plant_material: 3 # resource key: amount
+    rose_petal: 1
 ```
 
-Resources for recipes are defined next to recipes in `data/resources.json`
-
-```js
-{
-  "plant_material": {
-    "title": "Plant Material",
-    "quality": "common"
-  },
-  "rose_petal": {
-    "title": "Rose Petal",
-    "quality": "uncommon"
-  }
-}
-```
-
-For a player to get resources you create an item for them to use the `gather` command on:
-
-```yaml
-- id: greenplant
-  name: "Green Plant"
-  type: RESOURCE
-  roomDesc: "Green Plant"
-  keywords: [ "green", "plant", "resource" ]
-  metadata:
-    noPickup: true
-    # configures if and what happens when this resource is gathered
-    resource:
-      # flavor message displayed to the user after gathering
-      depletedMessage: "withers, having been stripped of usable materials."
-      # which materials you get and their rannge. `gather` will pick a random
-      # amount from this range
-      materials:
-        plant_material:
-          min: 1
-          max: 3
-```
+For the player to get resources you'll need two things: one is to define the resource type in 'data/resources.yml'.
+Second is to create a node for them to gather from. See areas/craft/items.yml for examples.
