@@ -1,26 +1,7 @@
 ---
-scrap_metal:
-  title: Scrap Metal
+plant_material:
+  title: Plant Material
   quality: common
-gear:
-  title: Gear
-  quality: uncommon
-piston:
-  title: Piston
-  quality: uncommon
-aethersilk:
-  title: Aethersilk
-  quality: rare
-leather:
-  title: Leather
+rose_petal:
+  title: Rose Petal
   quality: common
-aetherplasm:
-  title: Aetherplasm
-  quality: rare
-bone: 
-  title: Bone
-  quality: common
-sparkdust:
-  title: Sparkdust
-  quality: rare
-
